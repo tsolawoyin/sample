@@ -1,0 +1,20 @@
+.card {
+    width: 18rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.container {
+    min-height: 100vh;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+footer img {
+    width: 30px;
+    border-radius: 20px;
+}
