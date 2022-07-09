@@ -1,6 +1,12 @@
 const DATA = [
     
     {
+        "title": "DNA to RNA",
+        "description": "Convert DNA sequence to complimentary DNA strands, mRNA and protein",
+        "link": "./projects/dna-rna.html",
+        "icon": "./images/webpc-passthru.webp"
+    },
+    {
         "title": "Caesers Cipher",
         "description": "Encrypt words with rot-13",
         "link": "./projects/caesers.html",

@@ -6,7 +6,7 @@ INPUT(MAIN, "number", "number")
 MAIN.innerHTML += `<p></p>`
 const INPUTEL = document.querySelector("input")
 const P = document.querySelector("p")
-P.classList.add("roman","bg-white", "p-4", "text-center", "mt-6")
+P.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
 
 const roman = (number, roman_numeral = "") => {
     const numerals = {

@@ -6,7 +6,7 @@ INPUT(MAIN, "text", "word")
 MAIN.innerHTML += `<p></p>`
 const INPUTEL = document.querySelector("input")
 const P = document.querySelector("p")
-P.classList.add("roman","bg-white", "p-4", "text-center", "mt-6")
+P.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
 
 
 const ROT13 = (str, str2 = str.toUpperCase(), copy = [...str2], encrypted = []) => {

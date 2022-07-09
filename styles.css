@@ -26,3 +26,6 @@ footer img {
     font-size: 1.5rem;
     font-weight: bold;
 }
+.p {
+    overflow-x: auto;
+}
