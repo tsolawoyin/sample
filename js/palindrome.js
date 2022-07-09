@@ -1,7 +1,7 @@
 const MAIN= document.querySelector(".container")
 
 HEADER(MAIN)
-INPUT(MAIN, "word")
+INPUT(MAIN, "text", "word")
 
 MAIN.innerHTML += `<p></p>`
 const INPUTEL = document.querySelector("input")

@@ -1,4 +1,11 @@
 const DATA = [
+    
+    {
+        "title": "Caesers Cipher",
+        "description": "Encrypt words with rot-13",
+        "link": "./projects/caesers.html",
+        "icon": "./images/images.jpeg"
+    },
     {
         "title": "Roman Numeral Converter",
         "description": "Convert positive integers to the roman numeral equivalent",
