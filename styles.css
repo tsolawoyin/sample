@@ -29,3 +29,7 @@ footer img {
 .p {
     overflow-x: auto;
 }
+
+header img {
+    max-width: 100%;
+}
