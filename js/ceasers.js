@@ -55,4 +55,11 @@ const ROT13 = (str, str2 = str.toUpperCase(), copy = [...str2], encrypted = []) 
 INPUTEL.addEventListener("keyup", e => {
     let value = INPUTEL.value
     P.textContent = ROT13(value)
+
+    // for Ope
+    if( value === "YBGHF") {
+        setTimeout(() => alert("I wish you success all the way darling. LOVE YOU ❤"), 2000)
+    }
 })
+
+
