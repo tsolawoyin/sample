@@ -33,3 +33,19 @@ footer img {
 header img {
     max-width: 100%;
 }
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 650px) {
+    .card {
+        min-height: 13rem;
+    }
+    .card footer {
+        position: absolute;
+        bottom: 1em;
+    }
+    .card img {
+        margin-left: 7em;
+    }
+}
