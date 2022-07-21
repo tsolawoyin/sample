@@ -49,3 +49,8 @@ a {
         margin-left: 7em;
     }
 }
+
+.language {
+    font-size: 0.625rem;
+    display: inline-block;
+}

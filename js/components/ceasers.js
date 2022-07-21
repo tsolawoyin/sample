@@ -9,10 +9,8 @@ const P = document.querySelector("p")
 P.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
 
 
-const ROT13 = (str, str2 = str.toUpperCase(), copy = [...str2], encrypted = []) => {
-    let punc = str2.match(/[^A-Z ]+/)
+const ROT13 = (str, copy = [...str], encrypted = []) => {
     const CIPHER = {
-        " ": " ",
         A: "N",
         B: "O",
         C: "P",
@@ -38,18 +36,44 @@ const ROT13 = (str, str2 = str.toUpperCase(), copy = [...str2], encrypted = []) 
         W: "J",
         X: "K",
         Y: "L",
-        Z: "M"
+        Z: "M",
+        a: "n",
+        b: "o",
+        c: "p",
+        d: "q",
+        e: "r",
+        f: "s",
+        g: "t",
+        h: "u",
+        i: "v",
+        j: "w",
+        k: "x",
+        l: "y",
+        m: "z",
+        n: "a",
+        o: "b",
+        p: "c",
+        q: "d",
+        r: "e",
+        s: "f",
+        t: "g",
+        u: "h",
+        v: "i",
+        w: "j",
+        x: "k",
+        y: "l",
+        z: "m"
     }
+    let regex = /^[^a-zA-Z]+$/
     for(let letter of copy) {
+        if(regex.test(letter)) encrypted.push(letter)
         for(let word of Object.keys(CIPHER)) {
             if(letter === word) {
                 encrypted.push(CIPHER[letter])
             }
         }
     }
-    if(punc) encrypted.push(punc[0])
     return encrypted.join("")
-    console.log(punc)
 }
 
 INPUTEL.addEventListener("keyup", e => {
@@ -57,9 +81,10 @@ INPUTEL.addEventListener("keyup", e => {
     P.textContent = ROT13(value)
 
     // for Ope
-    if( value === "YBGHF") {
-        setTimeout(() => alert("I wish you success all the way darling. LOVE YOU ❤"), 2000)
-    }
+    if( value === "YBGHF") setTimeout(() => alert("I wish you success all the way darling. LOVE YOU ❤"), 2000)
+
+    // for yanmife
+    if( value === "V ybir lnazvsr") setTimeout(() => alert("I missed you all the way. Wishing you all the best over there. Take care dear"), 2000)
 })
 
 
