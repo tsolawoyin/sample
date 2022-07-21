@@ -7,7 +7,7 @@ MAIN.innerHTML += `<p></p>`
 const INPUTEL = document.querySelector("input")
 const P = document.querySelector("p")
 P.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
-FOOTER(MAIN)
+// FOOTER(MAIN) to be fixed later
 
 const ROT13 = (str, copy = [...str], encrypted = []) => {
     const CIPHER = {
@@ -86,5 +86,3 @@ INPUTEL.addEventListener("keyup", e => {
     // for yanmife
     if( value === "V ybir lnazvsr") setTimeout(() => alert("I missed you all the way. Wishing you all the best over there. Take care dear"), 2000)
 })
-
-

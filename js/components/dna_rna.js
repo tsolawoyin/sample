@@ -11,7 +11,7 @@ console.log(P);
 P.forEach((element, index) => {
     element.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
 })
-FOOTER(MAIN)
+// FOOTER(MAIN)
 
 // DNA to complimentary dna and rna
 const DNA_PAIR = {

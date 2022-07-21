@@ -11,7 +11,7 @@ const P = document.querySelector("p")
 const PALINDROME = (word, reversed = [...word]) => {
     return word === reversed.reverse().join("") ? true : false
 }
-FOOTER(MAIN)
+// FOOTER(MAIN)
 
 INPUTEL.addEventListener("keyup", e => {
     const VALUE = INPUTEL.value
