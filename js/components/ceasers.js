@@ -7,7 +7,7 @@ MAIN.innerHTML += `<p></p>`
 const INPUTEL = document.querySelector("input")
 const P = document.querySelector("p")
 P.classList.add("p","roman","bg-white", "p-4", "text-center", "mt-6")
-
+FOOTER(MAIN)
 
 const ROT13 = (str, copy = [...str], encrypted = []) => {
     const CIPHER = {

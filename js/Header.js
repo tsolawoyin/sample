@@ -1,5 +1,5 @@
 const HEADER = (component, props) => {
-    component.innerHTML += `<header class="pt-5">
+    let header = `<header class="pt-5">
         <img
                 class="btn d-block m-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
                 src="https://www.codewars.com/users/Olawoyin/badges/large"
@@ -21,4 +21,6 @@ const HEADER = (component, props) => {
                 </div>
         </div>
         </header>`
+
+        component.innerHTML += header
 }
