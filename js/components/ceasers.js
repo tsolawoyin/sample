@@ -85,4 +85,7 @@ INPUTEL.addEventListener("keyup", e => {
 
     // for yanmife
     if( value === "V ybir lnazvsr") setTimeout(() => alert("I missed you all the way. Wishing you all the best over there. Take care dear"), 2000)
+
+    // for M A
+    if(value === "rfgure onor, lbh ner gur orfg sevraq v znl rire unir sberire. pna'g ybir lbh yrff qneyvat") setTimeout(() => alert("Honestly, you are one of the rewards for my hardwork. 😎"), 3000)
 })
